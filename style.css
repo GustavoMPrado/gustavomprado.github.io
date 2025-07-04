@@ -1,0 +1,131 @@
+/* Estilo geral do site */
+/* Autor: Gustavo Marinho Prado */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f9fc;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004080;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #0073e6;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+}
+
+.content-section h1 {
+    margin-top: 0;
+    color: #004080;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+}
+
+.content-section ul {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+.content-section ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+form.form-contato {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+form label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004080;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #004080;
+    outline: none;
+}
+
+form button {
+    margin-top: 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0073e6;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0 20px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
